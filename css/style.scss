@@ -1,0 +1,95 @@
+body
+{
+    background-color: rgb(186, 216, 241);
+    header
+    {
+        .titulo
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+    main
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        
+        
+        .datos
+        {
+            box-shadow: 5px 10px 10px 2px;
+            background-color: rgb(165, 205, 238);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 100px;
+           
+
+            input
+            {
+                text-align: center;
+                width: 150px;
+                padding: 5px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+
+            select 
+            {
+                text-align: center;
+                width: 165px;
+                padding: 5px;
+                margin: 5px;
+                background-color: rgb(196, 196, 196);
+
+            }
+            
+            button
+            {
+                text-align: center;
+                width: 165px;
+                padding: 8px;
+                margin: 5px;
+                box-shadow: 1px 1px 10px;
+                background-color: rgb(112, 158, 196);
+                
+            }
+             
+            button:hover
+            {
+                
+                margin: 5px;
+                box-shadow: 1px 1px 10px;
+                background-color: rgb(72, 178, 228);
+                
+            }
+
+            
+
+            
+            
+
+            
+
+
+        }
+
+        .sexos
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 6rem;
+
+        }
+    }
+
+}
