@@ -78,7 +78,7 @@ let mostrar = () => {
             
     }).join(''); 
 
-    resultHombre.innerHTML += personasHTMLHombre;
+    resultHombre.innerHTML = personasHTMLHombre;
 
 
 //
@@ -108,7 +108,7 @@ let mostrar = () => {
             
     }).join(''); 
 
-    resultMujer.innerHTML += personasHTMLMujer;
+    resultMujer.innerHTML = personasHTMLMujer;
 
     
 }
