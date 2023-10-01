@@ -8,7 +8,7 @@ let calcular = () =>{
     let resultado = parseFloat(peso /(altura*altura));
 
     let result = document.querySelector("#result")
-    result.innerHTML = "<p> Tu IMC es : "+resultado+"</p>"
+    result.innerHTML = '<p style="color:blue;"> Tu IMC es : '+resultado+'</p>'
 
     
 }
@@ -55,7 +55,6 @@ btnAgregar.addEventListener("click", () =>{
 let mostrar = () => {
     let resultHombre = document.querySelector("#hombre");
     
-    resultHombre.innerHTML = "<h1>Hombres</h1>";
 
     let filtrarSexoHombre = personas.filter(datoH => datoH.sexo == 'masculino')
 
@@ -64,14 +63,15 @@ let mostrar = () => {
         let resultado = parseFloat(persona.peso /(persona.altura*persona.altura));
 
         return `
-            <div>
-            <p>Nombre: ${persona.nombre}</p>
-            <p>Altura: ${persona.altura}</p>
-            <p>Peso: ${persona.peso}</p>
-            <p>Sexo: ${persona.sexo}</p>
-            <p>Edad: ${persona.edad}</p>
-            <p>IMC : ${resultado}</p>
-            <hr> <!-- Separador entre personas -->
+        <div style="box-shadow: blue 1px 1px 10px; border-radius:10px;padding:1rem">
+            <p>Nombre: ${persona.nombre}
+            <br>Edad: ${persona.edad}
+            <br>Peso: ${persona.peso}
+            <br>Altura: ${persona.altura}
+
+            
+            </p>
+            
             </div>`;
             
     }).join(''); 
@@ -92,15 +92,16 @@ let mostrar = () => {
         let resultado = parseFloat(persona.peso /(persona.altura*persona.altura));
 
         return `
-            <div>
-            <p>Nombre: ${persona.nombre}</p>
-            <p>Altura: ${persona.altura}</p>
-            <p>Peso: ${persona.peso}</p>
-            <p>Sexo: ${persona.sexo}</p>
-            <p>Edad: ${persona.edad}</p>
-            <p>IMC : ${resultado}</p>
-            <hr> <!-- Separador entre personas -->
-            </div>`;
+        <div style="box-shadow: blue 1px 1px 10px; border-radius:10px;padding:1rem">
+        <p>Nombre: ${persona.nombre}
+        <br>Edad: ${persona.edad}
+        <br>Peso: ${persona.peso}
+        <br>Altura: ${persona.altura}
+
+        
+        </p>
+        
+        </div>`;
             
     }).join(''); 
 
