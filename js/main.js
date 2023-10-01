@@ -68,6 +68,8 @@ let mostrar = () => {
             <br>Edad: ${persona.edad}
             <br>Peso: ${persona.peso}
             <br>Altura: ${persona.altura}
+            <br>IMC: ${resultado}
+            
 
             
             </p>
@@ -97,6 +99,7 @@ let mostrar = () => {
         <br>Edad: ${persona.edad}
         <br>Peso: ${persona.peso}
         <br>Altura: ${persona.altura}
+        <br>IMC: ${resultado}
 
         
         </p>
