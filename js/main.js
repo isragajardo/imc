@@ -51,6 +51,8 @@ btnAgregar.addEventListener("click", () =>{
     document.querySelector("#peso").value = "";
     document.querySelector("#edad").value = "";
 
+    
+
 
 
     console.table(personas)
