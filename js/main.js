@@ -46,6 +46,12 @@ btnAgregar.addEventListener("click", () =>{
 
     agregarPersona(nombre,altura,peso,sexo,edad);
 
+    document.querySelector("#nombre").value = "";
+    document.querySelector("#altura").value = "";
+    document.querySelector("#peso").value = "";
+    document.querySelector("#edad").value = "";
+
+
 
     console.table(personas)
 
