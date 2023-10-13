@@ -17,18 +17,21 @@ let btnCalcular = document.querySelector("#btnCalcular")
 
 btnCalcular.addEventListener("click",calcular)
 
-let agregarPersona = (nombre, altura, peso, sexo, edad) => {
+let agregarPersona = (nombre, altura, peso, sexo, edad,resultado) => {
     let persona = 
     {
         nombre: nombre,
         altura: altura,
         peso: peso,
         sexo: sexo,
-        edad: edad
+        edad: edad,
+        resultado: peso /(altura*altura)
 
     };
     personas.push(persona);
-    console.log("Persona agregada:", persona);
+    
+    localStorage.setItem("usuario",JSON.stringify(persona));
+    console.log("Persona agregada:", "$persona");
 }
 
 
@@ -128,9 +131,23 @@ btnMostrar.addEventListener("click", mostrar);
 let filtrarSexo = personas.filter(dato => dato.sexo == 'mas')
 console.log(filtrarSexo)
 
+const btnStorage = document.querySelector("#btnStorage")
 
+btnStorage.addEventListener('click', ()=>{
+ let contenidoStorage = JSON.parse(localStorage.getItem("usuario"))
+ console.log(contenidoStorage)
+ let mostrarStorage = document.querySelector("#mostrarStorage")
+ 
+ mostrarStorage.innerHTML = `<div style="width: max-content;display: flex;justify-content: center;align-items: center;flex-direction: column; border:solid 1px;">
+                                 <p>Nombre: ${JSON.stringify(contenidoStorage.nombre)}</p>
+                                 <p>Sexo: ${JSON.stringify(contenidoStorage.sexo)}</p>
+                                 <p>Edad: ${JSON.stringify(contenidoStorage.edad)}</p>
+                                 <p>Peso: ${JSON.stringify(contenidoStorage.peso)}</p>
+                                 <p>Altura: ${JSON.stringify(contenidoStorage.altura)}</p>
+                                 <p>Altura: ${JSON.stringify(contenidoStorage.resultado)}</p>
 
-
+                               </div>`
+})
 
 
 
