@@ -149,6 +149,12 @@ btnStorage.addEventListener('click', ()=>{
                                </div>`
 })
 
+let btnStorageClear = document.querySelector("#btnStorageClear")
+
+btnStorageClear.addEventListener('click' , ()=>{
+    localStorage.clear()
+})
+
 
 
 
