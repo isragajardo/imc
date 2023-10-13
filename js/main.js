@@ -138,13 +138,13 @@ btnStorage.addEventListener('click', ()=>{
  console.log(contenidoStorage)
  let mostrarStorage = document.querySelector("#mostrarStorage")
  
- mostrarStorage.innerHTML = `<div style="margin-top:1rem;width:60%;display: flex;justify-content: center;align-items: center;flex-direction: column; border:solid 1px;">
+ mostrarStorage.innerHTML = `<div style="margin-top:1rem;width:60%;display: flex;justify-content: center;align-items: center;box-shadow: 5px 10px 10px 2px;background-color: rgb(165, 205, 238);">
                                  <p>Nombre: ${JSON.stringify(contenidoStorage.nombre)}</p>
                                  <p>Sexo: ${JSON.stringify(contenidoStorage.sexo)}</p>
                                  <p>Edad: ${JSON.stringify(contenidoStorage.edad)}</p>
                                  <p>Peso: ${JSON.stringify(contenidoStorage.peso)}</p>
                                  <p>Altura: ${JSON.stringify(contenidoStorage.altura)}</p>
-                                 <p>Altura: ${JSON.stringify(contenidoStorage.resultado)}</p>
+                                 <p>Total: ${JSON.stringify(contenidoStorage.resultado)}</p>
 
                                </div>`
 })
